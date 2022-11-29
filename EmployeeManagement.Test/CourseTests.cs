@@ -8,6 +8,6 @@ public class CourseTests
     public void CourseConstructor_ConstructorCourse_IsNewMustBeTrue()
     {
         var course = new Course("Zeynel");
-        Assert.False(course.IsNew);
+        Assert.True(course.IsNew);
     }
 }

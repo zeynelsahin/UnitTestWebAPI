@@ -3,7 +3,7 @@ using EmployeeManagement.DataAccess.Entities;
 
 namespace EmployeeManagement.Test;
 
-public class EmployeeFactorTests
+public class EmployeeFactoryTests
 {
   [Fact]
   public void CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500And3500()
