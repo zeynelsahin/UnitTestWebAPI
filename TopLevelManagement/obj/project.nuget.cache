@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "O/G85eRQQTousnEg0nAXtTx9ITFZLRoHzxHkTsSY+8vRfmib3mNkeERvg5sw+flgZf6+tSsyxSBvajuvigy7Mg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zeynels\\Desktop\\Git Project\\UnitTest\\TopLevelManagement\\TopLevelManagement.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.0.25:8081/repository/nuget-hosted'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
