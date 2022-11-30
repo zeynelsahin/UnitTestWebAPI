@@ -37,5 +37,14 @@ public class EmployeeFactoryTests
     var employee = (InternalEmployee)employeeFactory.CreateEmployee("Zeynel", "Sahin");
     employee.Salary = 2500.123m;
     Assert.Equal(2500,employee.Salary,0);//precision virgülden sonra kaç basamağın dikkate alıncağını belirtir default değeri tümü dür
-  } 
+  }
+
+  [Fact]
+  public void CreateEmployee_IsExternalIsTrue_ReturnTypeMustBExternalEmployee()
+  {
+    var employeeFactory = new EmployeeFactory();
+    var employee = employeeFactory.CreateEmployee("Zeynel", "Sahin", "TheKing", true);
+    Assert.IsType<ExternalEmployee>(employee);
+    // Assert.IsAssignableFrom<Employee>(employee);
+  }
 } 
