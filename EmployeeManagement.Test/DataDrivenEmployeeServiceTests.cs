@@ -78,7 +78,8 @@ public class DataDrivenEmployeeServiceTests : IClassFixture<EmployeeServiceFixtu
     // [MemberData(nameof(ExampleTestDataForGiveRaiseWithMethod),1,MemberType = typeof(DataDrivenEmployeeServiceTests)),]
     // [ClassData(typeof(EmployeeServiceTestData))]
      // [ClassData(typeof(StronglyTypedEmployeeServiceTestData))]
-    [MemberData(nameof(StronglyTypedExampleForGiveRaiseWithProperty))]
+    // [MemberData(nameof(StronglyTypedExampleForGiveRaiseWithProperty))]
+     [ClassData(typeof(StronglyTypedEmployeeServiceTestData_FormFile))]
     public async Task GiveRaise_RaiseGive_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool exceptedValueForMinimumRaiseGiven)
     {
         var internalEmployee = new InternalEmployee(

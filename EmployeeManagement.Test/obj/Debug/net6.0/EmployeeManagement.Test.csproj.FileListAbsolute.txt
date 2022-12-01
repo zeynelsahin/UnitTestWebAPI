@@ -136,3 +136,4 @@ C:\Users\zeynels\Desktop\Git Project\UnitTest\EmployeeManagement.Test\obj\Debug\
 C:\Users\zeynels\Desktop\Git Project\UnitTest\EmployeeManagement.Test\obj\Debug\net6.0\EmployeeManagement.Test.pdb
 C:\Users\zeynels\Desktop\Git Project\UnitTest\EmployeeManagement.Test\obj\Debug\net6.0\EmployeeManagement.Test.genruntimeconfig.cache
 C:\Users\zeynels\Desktop\Git Project\UnitTest\EmployeeManagement.Test\obj\Debug\net6.0\ref\EmployeeManagement.Test.dll
+C:\Users\zeynels\Desktop\Git Project\UnitTest\EmployeeManagement.Test\bin\Debug\net6.0\TestData\EmployeeServiceTestData.csv
