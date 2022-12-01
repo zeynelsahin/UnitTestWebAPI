@@ -35,7 +35,12 @@ public class EmployeeServiceTest //: IClassFixture<EmployeeServiceFixture>
         var internalEmployee = _employeeServiceFixture.EmployeeService.CreateInternalEmployee("Zeynel", "Sahin");
         Assert.Contains(internalEmployee.AttendedCourses, course => course.Id == Guid.Parse("37e03ca7-c730-4351-834c-b66f280cdb01"));
     }
-
+    [Fact]
+    public void CreateInternalEmployee_InternalEmployeeCreated_MustHaveAttendedSecondObligatoryCourse_WithPredicate()
+    {
+        var internalEmployee = _employeeServiceFixture.EmployeeService.CreateInternalEmployee("Zeynel", "Sahin");
+        Assert.Contains(internalEmployee.AttendedCourses, course => course.Id == Guid.Parse("1fd115cf-f44c-4982-86bc-a8fe2e4ff83e"));
+    }
     [Fact]
     public void CreateInternalEmployee_InternalEmployeeCreated_AttendedCoursesMustMatchObligatoryCourses()
     {
