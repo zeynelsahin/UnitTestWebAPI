@@ -2,6 +2,7 @@
 using EmployeeManagement.Business.Exceptions;
 using EmployeeManagement.DataAccess.Entities;
 using EmployeeManagement.Test.Fixtures;
+using EmployeeManagement.Test.TestData;
 
 namespace EmployeeManagement.Test;
 
@@ -68,7 +69,8 @@ public class DataDrivenEmployeeServiceTests : IClassFixture<EmployeeServiceFixtu
     }
 
     [Theory]
-    [MemberData(nameof(ExampleTestDataForGiveRaiseWithMethod),1,MemberType = typeof(DataDrivenEmployeeServiceTests)),]
+    // [MemberData(nameof(ExampleTestDataForGiveRaiseWithMethod),1,MemberType = typeof(DataDrivenEmployeeServiceTests)),]
+    [ClassData(typeof(EmployeeServiceTestData))]
     public async Task GiveRaise_RaiseGive_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool exceptedValueForMinimumRaiseGiven)
     {
         var internalEmployee = new InternalEmployee(
