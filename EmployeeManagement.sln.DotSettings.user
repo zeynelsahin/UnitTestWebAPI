@@ -4,7 +4,7 @@
 	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=NamingFilter/@EntryIndexedValue">On</s:String>
 	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=SpellingFilter/@EntryIndexedValue">On</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=57d8cdcd_002D07c0_002D4cc6_002D8ce0_002D6282dd920635/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500_PrecisionExample" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=57d8cdcd_002D07c0_002D4cc6_002D8ce0_002D6282dd920635/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="1" IsActive="True" Name="CreateEmployee_ConstructInternalEmployee_SalaryMustBeBetween2500_PrecisionExample" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.EmployeeFactoryTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.EmployeeServiceTest&lt;/TestId&gt;&#xD;
@@ -12,6 +12,8 @@
     &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.DataDrivenEmployeeServiceTests.GiveRaise_MoreThanMinimumRaiseGiven_EmployeeMinimumRaiseGivenMustBe&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.EmployeeServiceTestWithAspNetCoreDI.CreateInternalEmployee_InternalEmployeeCreated_MustHaveAttendedFix&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.EmployeeServiceTestWithAspNetCoreDI&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.DataDrivenEmployeeServiceTests.GiveRaise_RaiseGive_EmployeeMinimumRaiseGivenMatchesValue&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::3F962357-1A87-4865-9C65-09DC90FAC8C7::net6.0::EmployeeManagement.Test.DataDrivenEmployeeServiceTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
