@@ -57,6 +57,12 @@ public class DataDrivenEmployeeServiceTests : IClassFixture<EmployeeServiceFixtu
             };
         }
     }
+    public static TheoryData<int,bool> StronglyTypedExampleForGiveRaiseWithProperty =>
+        new TheoryData<int, bool>
+        {
+            { 100, true },
+            { 200, false }
+        };
 
     public static IEnumerable<object[]> ExampleTestDataForGiveRaiseWithMethod(int testDataInstancesToProvide)
     {
@@ -70,7 +76,9 @@ public class DataDrivenEmployeeServiceTests : IClassFixture<EmployeeServiceFixtu
 
     [Theory]
     // [MemberData(nameof(ExampleTestDataForGiveRaiseWithMethod),1,MemberType = typeof(DataDrivenEmployeeServiceTests)),]
-    [ClassData(typeof(EmployeeServiceTestData))]
+    // [ClassData(typeof(EmployeeServiceTestData))]
+     // [ClassData(typeof(StronglyTypedEmployeeServiceTestData))]
+    [MemberData(nameof(StronglyTypedExampleForGiveRaiseWithProperty))]
     public async Task GiveRaise_RaiseGive_EmployeeMinimumRaiseGivenMatchesValue(int raiseGiven, bool exceptedValueForMinimumRaiseGiven)
     {
         var internalEmployee = new InternalEmployee(
