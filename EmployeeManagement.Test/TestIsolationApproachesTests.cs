@@ -1,6 +1,9 @@
 ﻿using EmployeeManagement.Business;
 using EmployeeManagement.DataAccess.DbContexts;
+using EmployeeManagement.DataAccess.Entities;
 using EmployeeManagement.DataAccess.Services;
+using EmployeeManagement.Services.Test;
+using EmployeeManagement.Test.HttpMessageHandlers;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Xunit.Sdk;
@@ -30,5 +33,15 @@ public class TestIsolationApproachesTests
         var expectedSuggestedBonus = internalEmployee.YearsInService * (internalEmployee.AttendedCourses.Count + 1) * 100;
         await employeeService.AttendCourseAsync(internalEmployee, courseToAttend);
         Assert.Equal(expectedSuggestedBonus,internalEmployee.SuggestedBonus);
+    }
+
+    [Fact]
+    public async Task PromoteInternalEmployeeAsync_IsEligible_JobLevelMustBeIncreased()
+    {
+        var httpClient = new HttpClient(new TestablePromotionEligibilityHandler(true));
+        var internalEmployee = new InternalEmployee("Zeynel", "Sahin", 5, 300, false, 1);
+        var promotionService = new PromotionService(httpClient, new EmployeeManagementTestDataRepository());
+        await promotionService.PromoteInternalEmployeeAsync(internalEmployee);
+        Assert.Equal(2,internalEmployee.JobLevel);
     }
 }
