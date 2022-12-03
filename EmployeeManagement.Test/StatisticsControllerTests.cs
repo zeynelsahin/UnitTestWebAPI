@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using EmployeeManagement.Controllers;
 using EmployeeManagement.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
@@ -35,20 +36,23 @@ public class StatisticsControllerTests
 
         var mapperConfiguration = new MapperConfiguration(cfg => cfg.AddProfile<MapperProfiles.StatisticsProfile>());
         var mapper = new Mapper(mapperConfiguration);
-        var statisticController = new StatisticsController(mapper);
-
-        statisticController.ControllerContext = new ControllerContext()
+        var statisticController = new StatisticsController(mapper)
         {
-            HttpContext = httpContextMock.Object
+            ControllerContext = new ControllerContext()
+            {
+                HttpContext = httpContextMock.Object
+            }
         };
+
         var result = statisticController.GetStatistics();
 
         var actionResult = Assert.IsType<ActionResult<StatisticsDto>>(result);
         var okObjectResult = Assert.IsType<OkObjectResult>(actionResult.Result);
         var staticsDto = Assert.IsType<StatisticsDto>(okObjectResult.Value);
-        Assert.Equal(localIpAddress.ToString(),staticsDto.LocalIpAddress);
-        Assert.Equal(localPort,staticsDto.LocalPort);
-        Assert.Equal(remoteIpAddress.ToString(),staticsDto.RemoteIpAddress);
-        Assert.Equal(remotePort,staticsDto.RemotePort);
+        Assert.Equal(localIpAddress.ToString(), staticsDto.LocalIpAddress);
+        Assert.Equal(localPort, staticsDto.LocalPort);
+        Assert.Equal(remoteIpAddress.ToString(), staticsDto.RemoteIpAddress);
+        Assert.Equal(remotePort, staticsDto.RemotePort);
     }
+
 }
