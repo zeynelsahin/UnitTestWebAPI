@@ -31,7 +31,7 @@ public class InternalEmployeeControllerTests
 
         var mapperConfiguration = new MapperConfiguration(configure=>configure.AddProfile<MapperProfiles.EmployeeProfile>());
         var mapper = new Mapper(mapperConfiguration);
-        _internalEmployeesController = new InternalEmployeesController(employeeServiceMock.Object, mapperMock);
+        _internalEmployeesController = new InternalEmployeesController(employeeServiceMock.Object, mapper);
     }
 
     [Fact]
@@ -67,7 +67,6 @@ public class InternalEmployeeControllerTests
     public async Task GetInternalEmployees_GetAction_ReturnsOkObjectResultWithCorrectAmountOfInternalEmployees()
     {
         var result = await _internalEmployeesController.GetInternalEmployees();
-
         var actionResult = Assert.IsType<ActionResult<IEnumerable<Models.InternalEmployeeDto>>>(result);
         var okObjectResult = Assert.IsType<OkObjectResult>(actionResult.Result);
         var dtoList = Assert.IsAssignableFrom<IEnumerable<Models.InternalEmployeeDto>>(okObjectResult.Value);
