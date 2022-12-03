@@ -24,6 +24,5 @@ public class DemoInternalEmployeesControllerTests
         var actionResult = Assert.IsType<ActionResult<Models.InternalEmployeeDto>>(result);
         var badRequestResult = Assert.IsType<BadRequestObjectResult>(actionResult.Result);
         Assert.IsType<SerializableError>(badRequestResult.Value);
-
     }
 }
