@@ -1,0 +1,12 @@
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\bin\Debug\net6.0\CompanyFramework.deps.json
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\bin\Debug\net6.0\CompanyFramework.dll
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\bin\Debug\net6.0\CompanyFramework.pdb
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.csproj.AssemblyReference.cache
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.AssemblyInfoInputs.cache
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.AssemblyInfo.cs
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.csproj.CoreCompileInputs.cache
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.dll
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\refint\CompanyFramework.dll
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\CompanyFramework.pdb
+C:\Users\zeynels\Desktop\Git Project\UnitTest\CompanyFramework\obj\Debug\net6.0\ref\CompanyFramework.dll
