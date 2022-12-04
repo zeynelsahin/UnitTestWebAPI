@@ -55,6 +55,8 @@
     &lt;/And&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;xUnit::BDF7ACD5-EE96-47A8-92DB-FD39D25EB4C5::net6.0::CompanyFramework.Test.ClassForTestingTests.MethodForTesting_Execute_ReturnTrue&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::BDF7ACD5-EE96-47A8-92DB-FD39D25EB4C5::net6.0::CompanyFramework.Test.ClassForTestingTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::BDF7ACD5-EE96-47A8-92DB-FD39D25EB4C5::net5.0::CompanyFramework.Test.ClassForTestingTests&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>

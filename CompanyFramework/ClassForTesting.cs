@@ -1,4 +1,6 @@
-﻿namespace CompanyFramework;
+﻿using System.Threading;
+
+namespace CompanyFramework;
 
 public class ClassForTesting
 {
