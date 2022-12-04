@@ -53,6 +53,6 @@ public class PromotionControllerTest
         var promotionResultDto = Assert.IsType<PromotionResultDto>(okObjectResult.Value);
 
         Assert.Equal(expectedEmployeeId, promotionResultDto.EmployeeId);
-        Assert.Equal(++currentJobLevel, promotionResultDto.JobLevel);
+        Assert.Equal(++currentJobLevel, promotionResultDto.JobLevel); 
     }
 }
